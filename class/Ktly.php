@@ -3,7 +3,7 @@ class Ktly{
 
     public $url;
     public $token;
-    private static $url_ktly = "http://ktly.tk";
+    private static $url_ktly = "https://ktly.tk";
 
     public function __construct($url) {
         $this->url = $url;
