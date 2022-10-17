@@ -35,14 +35,14 @@
         </div>
         <div class="row p-5 action">
             <div class="row">
-                <div class="col-3 align-self-center">
+                <div class="col-sm-12 col-lg-3 align-self-center">
                     <h1 class="title">Acorta tus URLs con <span>Ktly</span></h1>
                     <p>Genera urls más cortas para envío de mensajería, mail etc.</p>
                 </div>
-                <div class="col-7 align-self-center">
+                <div class="col-sm-12 col-lg-7 align-self-center">
                     <input type="text" class="form-control" placeholder="https://tu-url.com/" id="send_url">
                 </div>
-                <div class="col-2 align-self-center">
+                <div class="col-sm-12 col-lg-2 align-self-center">
                     <button type="button" class="form-control btn btn-ktly" onclick="loadLink()" id="generate_button">Generar URL</button>
                 </div>
             </div>
