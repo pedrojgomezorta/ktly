@@ -25,4 +25,5 @@ function spinnerLoad(){
 function copyToClipboard() {
   var copyText = document.getElementById("ktly_url");
   navigator.clipboard.writeText(copyText.innerHTML);
+  $('.toast').toast('show');
 }

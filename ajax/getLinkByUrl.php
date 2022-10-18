@@ -6,10 +6,15 @@ if (filter_var($_POST['url'], FILTER_VALIDATE_URL)) {
     echo '
     <h3>Tu shortcut ha sido creado.</h3>
     <h1>
-        <a href="" target="_blank" id="ktly_url">'.$ktly->generateUrl().'</a>
+        <a href="'.$ktly->generateUrl().'" target="_blank" id="ktly_url">'.$ktly->generateUrl().'</a>
         <button type="button" class="form-control btn btn-ktly" onclick="copyToClipboard()" id="copy_button" title="Copiar al portapapeles">
             <i class="fa fa-copy"></i>
         </button>
+        <div class="toast">
+            <div class="toast-body">
+            Url copiada!
+            </div>
+        </div>
     </h1> 
     ';
 }else{
