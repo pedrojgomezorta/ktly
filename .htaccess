@@ -1,4 +1,6 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{HTTPS} off
 RewriteRule ^([^/]+)$ index.php?s=$1 [L]
+RewriteRule ^(.*)$ https://example.com/$1 [L,R=301]
